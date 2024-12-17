@@ -6,4 +6,9 @@ Rake::TestTask.new do |t|
   t.verbose = true
 end
 
-task default: :test
+desc "Run the main application script"
+task :run do
+  ruby "main.rb"
+end
+
+task default: :run
